@@ -35,6 +35,7 @@
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Software Binders" href="software_binders.html" />
     <link rel="prev" title="Recommended/Required Software" href="curriculum/software.html" /> 
 </head>
 
@@ -87,6 +88,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#jitpack">Jitpack</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="software_binders.html">Software Binders</a></li>
 </ul>
 
             
@@ -161,28 +163,20 @@
 <p>If you don’t think you’ll need to edit NerdyLib on the fly (such as at comp) it’s probably better to add NerdyLib via Jitpack.
 If you’re a member of another team interested in using NerdyLib, it’s also recommended to add NerdyLib via Jitpack.</p>
 <p>Add the following to build.gradle in repositories.</p>
-<dl>
-<dt>..code-block::</dt><dd><dl>
-<dt>repositories {</dt><dd><p>mavenCentral()
-maven {</p>
-<blockquote>
-<div><p>url “<a class="reference external" href="https://jitpack.io">https://jitpack.io</a>”</p>
-</div></blockquote>
-<p>}</p>
-</dd>
-</dl>
-<p>}</p>
-</dd>
-</dl>
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="n">repositories</span> <span class="o">{</span>
+    <span class="n">mavenCentral</span><span class="o">()</span>
+    <span class="n">maven</span> <span class="o">{</span>
+        <span class="n">url</span> <span class="s">&quot;https://jitpack.io&quot;</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</pre></div>
+</div>
 <p>And add the following to build.gradle under dependencies</p>
-<dl>
-<dt>..code-block::</dt><dd><dl class="simple">
-<dt>dependencies {</dt><dd><p>compile ‘com.github.nerdherd:NerdyLib:version-number’</p>
-</dd>
-</dl>
-<p>}</p>
-</dd>
-</dl>
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span>dependencies {
+    compile &#39;com.github.nerdherd:NerdyLib:version-number&#39;
+}
+</pre></div>
+</div>
 <p>Version number can be a github commit hash or a version number, look at <a class="reference external" href="https://jitpack.io/">Jitpack</a> for more information.</p>
 </div>
 </div>
@@ -194,6 +188,8 @@ maven {</p>
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="software_binders.html" class="btn btn-neutral float-right" title="Software Binders" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="curriculum/software.html" class="btn btn-neutral float-left" title="Recommended/Required Software" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>

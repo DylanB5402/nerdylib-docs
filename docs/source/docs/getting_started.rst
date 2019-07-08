@@ -11,7 +11,8 @@ If you're a member of another team interested in using NerdyLib, it's also recom
 
 Add the following to build.gradle in repositories.
 
-..code-block:: java
+.. code-block:: java
+
     repositories {
         mavenCentral()
         maven {
@@ -21,7 +22,8 @@ Add the following to build.gradle in repositories.
 
 And add the following to build.gradle under dependencies
 
-..code-block:: java
+.. code-block:: java
+
     dependencies {
         compile 'com.github.nerdherd:NerdyLib:version-number'
     }

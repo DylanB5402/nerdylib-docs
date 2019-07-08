@@ -13,3 +13,4 @@ Welcome to NerdyLib's documentation!
     docs/about
     docs/curriculum/software
     docs/getting_started
+    docs/software_binders
